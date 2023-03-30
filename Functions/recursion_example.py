@@ -20,7 +20,7 @@ def reverse_string(input_str):
     if input_str == "":
         return ""
     else:
-        return (input_str[1:]) + input_str[0]
+        return reverse_string(input_str[1:]) + input_str[0]
 
 
 def main():
@@ -31,8 +31,8 @@ def main():
     print()
 
     print(reverse_string("Hello"))
-    print(reverse_string("Papillaa"))
-    print("This is the reverse of an empty string:", reverse_string(""))
+    print(reverse_string("Papilla"))
+    print("The reverse of an empty string:", reverse_string(""))
 
 
 if __name__ == '__main__':
